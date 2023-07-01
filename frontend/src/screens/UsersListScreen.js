@@ -32,7 +32,7 @@ const UsersListScreen = ({ history }) => {
   }, [dispatch, userInfo, history])
 
   const deleteHandler = (id) => {
-    if (window.confirm('האם אתם בטוחים שברצונכם למחוק את המשתמש?')) {
+    if (window.confirm('Anda yakin untuk menghapus pengguna ini?')) {
       dispatch(deleteUser(id))
     }
   }
@@ -40,9 +40,9 @@ const UsersListScreen = ({ history }) => {
   return (
     <>
       <Helmet>
-        <title>זץ | רשימת משתמשים</title>
+        <title>Admin | User List</title>
       </Helmet>
-      <h1 style={{ color: '#AAAAAA' }}>רשימת משתמשים</h1>
+      <h1 style={{ color: '#AAAAAA' }}>User List</h1>
       {loading ? (
         <Spinner />
       ) : (
@@ -53,7 +53,7 @@ const UsersListScreen = ({ history }) => {
               dismissible={false}
               classN='alert-user-list'
             >
-              המשתמש הוסר בהצלחה
+              Pengguna berhasil dihapus
             </Message>
           )}
 
@@ -63,7 +63,7 @@ const UsersListScreen = ({ history }) => {
               dismissible={false}
               classN='alert-user-list'
             >
-              המשתמש עודכן בהצלחה
+              Pengguna telah berhasil diperbarui
             </Message>
           )}
 
@@ -86,13 +86,13 @@ const UsersListScreen = ({ history }) => {
             >
               <thead>
                 <tr style={{ textAlign: 'center' }}>
-                  <th className='hide-sm'>זיהוי משתמש</th>
-                  <th>שם</th>
-                  <th className='hide-sm'>דוא"ל</th>
-                  <th>מנהל מערכת</th>
-                  <th>קיימות הזמנות</th>
-                  <th>קיימת הזמנה משולמת</th>
-                  <th>עריכת/מחיקת משתמש</th>
+                  <th className='hide-sm'>User ID</th>
+                  <th>Nama</th>
+                  <th className='hide-sm'>Email</th>
+                  <th>Admin ?</th>
+                  <th>Ada Pesanan ?</th>
+                  <th>Ada Pesanan Dibayar ?</th>
+                  <th>Edit / Hapus User</th>
                 </tr>
               </thead>
               <tbody>

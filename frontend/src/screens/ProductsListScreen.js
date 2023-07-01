@@ -54,7 +54,7 @@ const ProductsListScreen = ({ history, match }) => {
   }, [dispatch, userInfo, history, successCreate, createdProduct, pageNumber])
 
   const deleteHandler = (id) => {
-    if (window.confirm('האם אתם בטוחים שברצונכם למחוק את המוצר?')) {
+    if (window.confirm('Apakah Anda yakin ingin menghapus produk?')) {
       dispatch(deleteProduct(id))
     }
   }
@@ -66,15 +66,15 @@ const ProductsListScreen = ({ history, match }) => {
   return (
     <>
       <Helmet>
-        <title>זץ | רשימת מוצרים</title>
+        <title>Admin | Manajemen Produk</title>
       </Helmet>
       <Row className='align-items-center'>
         <Col>
-          <h1 style={{ color: '#AAAAAA' }}>רשימת מוצרים</h1>
+          <h1 style={{ color: '#AAAAAA' }}>Daftar Produk</h1>
         </Col>
-        <Col className='text-left'>
+        <Col className='text-right'>
           <Button className='my-3 btn btn-brand' onClick={createProductHandler}>
-            <i className='fas fa-plus'></i> הוספת מוצר
+            <i className='fas fa-plus'></i>{' '}Tambahkan Produk
           </Button>
         </Col>
       </Row>
@@ -98,7 +98,7 @@ const ProductsListScreen = ({ history, match }) => {
               dismissible={false}
               classN='alert-product-screen'
             >
-              המוצר עודכן בהצלחה
+              Produk berhasil diperbarui
             </Message>
           )}
 
@@ -150,15 +150,15 @@ const ProductsListScreen = ({ history, match }) => {
               >
                 <thead>
                   <tr style={{ textAlign: 'center' }}>
-                    <th>מק"ט</th>
-                    <th style={{ textAlign: 'right' }}>שם</th>
-                    <th>מחיר</th>
-                    <th style={{ width: '6rem' }}>כמות במלאי</th>
-                    <th className='hide-sm hide-md'>קטגוריה</th>
-                    <th className='hide-sm hide-md'>יצרן</th>
-                    <th>מפורסם</th>
-                    <th className='hide-sm'>מחיקה</th>
-                  </tr>
+                     <th>Produk ID</th>
+                     <th style={{ textAlign: 'right' }}>Nama Produk</th>
+                     <th>harga</th>
+                     <th style={{ width: '6rem' }}>Stok</th>
+                     <th className='hide-sm hide-md'>Kategori</th>
+                     <th className='hide-sm hide-md'>Pemilik</th>
+                     <th>Published ?</th>
+                     <th className='hide-sm'>hapus</th>
+                   </tr>
                 </thead>
                 <tbody>
                   {!loading &&

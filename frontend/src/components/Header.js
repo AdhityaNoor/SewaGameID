@@ -36,15 +36,15 @@ const Header = () => {
             <Route render={({ history }) => <SearchBox history={history} />} />
             <Nav className='mr-auto'>
               {userInfo && userInfo.isAdmin && (
-                <NavDropdown title={`תפריט מנהל מערכת  `} id='adminmenu'>
+                <NavDropdown title={`Menu Admin`} id='adminmenu'>
                   <LinkContainer to='/admin/orders'>
-                    <NavDropdown.Item>רשימת הזמנות</NavDropdown.Item>
+                    <NavDropdown.Item>Semua Pesanan</NavDropdown.Item>
                   </LinkContainer>
                   <LinkContainer to='/admin/products'>
-                    <NavDropdown.Item>רשימת מוצרים</NavDropdown.Item>
+                    <NavDropdown.Item>Manajemen Produk</NavDropdown.Item>
                   </LinkContainer>
                   <LinkContainer to='/admin/users'>
-                    <NavDropdown.Item>רשימת משתמשים</NavDropdown.Item>
+                    <NavDropdown.Item>Manajemen User</NavDropdown.Item>
                   </LinkContainer>
                   <LinkContainer to='/profile'>
                     <NavDropdown.Item>Profil</NavDropdown.Item>

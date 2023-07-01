@@ -86,7 +86,7 @@ const ProductEditScreen = ({ match, history }) => {
   }
 
   const deleteHandler = () => {
-    if (window.confirm('האם אתם בטוחים שברצונכם למחוק את המוצר?')) {
+    if (window.confirm('Apakah Anda yakin ingin menghapus produk?')) {
       dispatch(deleteProduct(productId))
       history.push('/admin/products')
     }
@@ -122,7 +122,7 @@ const ProductEditScreen = ({ match, history }) => {
   return (
     <>
       <Helmet>
-        <title>זץ | עריכת מוצר {!product ? '' : `"${product.name}"`} </title>
+        <title>Admin | Edit Produk {!product ? '' : `"${product.name}"`} </title>
       </Helmet>
       <Button onClick={() => history.push('/admin/products')} className='mx-1'>
         Kembali
@@ -165,7 +165,7 @@ const ProductEditScreen = ({ match, history }) => {
           <FormContainer md={8}>
             <ListGroup>
               <ListGroup.Item>
-                <h1 className='text-center'>עריכת מוצר</h1>
+                <h1 className='text-center'>Edit Produk</h1>
               </ListGroup.Item>
               <ListGroup.Item className='text-center'>
                 <Image
@@ -179,17 +179,17 @@ const ProductEditScreen = ({ match, history }) => {
               <ListGroup.Item>
                 <Form onSubmit={submitHandler}>
                   <Form.Group controlId='name'>
-                    <Form.Label>שם</Form.Label>
+                  <Form.Label>Nama</Form.Label>
                     <Form.Control
                       type='text'
-                      placeholder='שם המוצר'
+                      placeholder='Nama Produk'
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                     ></Form.Control>
                   </Form.Group>
 
                   <Form.Group controlId='price'>
-                    <Form.Label>מחיר</Form.Label>
+                    <Form.Label>Harga</Form.Label>
                     <Form.Control
                       type='number'
                       placeholder='מחיר'
@@ -199,7 +199,7 @@ const ProductEditScreen = ({ match, history }) => {
                   </Form.Group>
 
                   <Form.Group controlId='image'>
-                    <Form.Label>נתיב התמונה</Form.Label>
+                  <Form.Label>Direktori Gambar Produk</Form.Label>
                     <Form.Control
                       dir='ltr'
                       type='text'
@@ -214,7 +214,7 @@ const ProductEditScreen = ({ match, history }) => {
                       </>
                     ) : (
                       <>
-                        <Form.Label className='mt-3'>או העלאת תמונה</Form.Label>
+                        <Form.Label className='mt-3'>Update Gambar Produk</Form.Label>
                         <Form.File
                           className='mb-1'
                           id='image-file'
@@ -227,41 +227,41 @@ const ProductEditScreen = ({ match, history }) => {
                   </Form.Group>
 
                   <Form.Group controlId='description'>
-                    <Form.Label>תיאור</Form.Label>
+                    <Form.Label>Deskripsi</Form.Label>
                     <Form.Control
                       as='textarea'
                       rows={3}
-                      placeholder='תיאור'
+                      placeholder='Isi Deskripsi'
                       value={description}
                       onChange={(e) => setDescription(e.target.value)}
                     ></Form.Control>
                   </Form.Group>
 
                   <Form.Group controlId='brand'>
-                    <Form.Label>יצרן</Form.Label>
+                  <Form.Label>Pemilik</Form.Label>
                     <Form.Control
                       type='text'
-                      placeholder='יצרן'
+                      placeholder='Pemilik'
                       value={brand}
                       onChange={(e) => setBrand(e.target.value)}
                     ></Form.Control>
                   </Form.Group>
 
                   <Form.Group controlId='category'>
-                    <Form.Label>קטגוריה</Form.Label>
+                    <Form.Label>Kategori</Form.Label>
                     <Form.Control
                       type='text'
-                      placeholder='קטגוריה'
+                      placeholder='Pilih Kategori'
                       value={category}
                       onChange={(e) => setCategory(e.target.value)}
                     ></Form.Control>
                   </Form.Group>
 
                   <Form.Group controlId='countInStock'>
-                    <Form.Label>כמות במלאי</Form.Label>
+                  <Form.Label>Stok</Form.Label>
                     <Form.Control
                       type='number'
-                      placeholder='כמות במלאי'
+                      placeholder='jumlah dalam stok'
                       value={countInStock}
                       onChange={(e) => setCountInStock(e.target.value)}
                     ></Form.Control>
@@ -270,7 +270,7 @@ const ProductEditScreen = ({ match, history }) => {
                   <Form.Group controlId='published'>
                     <Form.Check
                       type='checkbox'
-                      label='להצגה בדף הראשי'
+                      label='Tampilkan di Campaign'
                       checked={published}
                       onChange={(e) => setPublished(e.target.checked)}
                     ></Form.Check>
@@ -284,7 +284,7 @@ const ProductEditScreen = ({ match, history }) => {
                   className='btn btn-danger btn-block mt-4_5'
                   onClick={deleteHandler}
                 >
-                  מחיקת המוצר
+                  Hapus Produk
                 </Button>
               </ListGroup.Item>
             </ListGroup>

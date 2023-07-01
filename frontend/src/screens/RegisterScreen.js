@@ -34,7 +34,7 @@ const RegisterScreen = ({ location, history }) => {
       history.push(redirect)
     }
 
-    if (error === 'המשתמש קיים' && googleEmail !== '') {
+    if (error === 'User Exists' && googleEmail !== '') {
       setLoginSuccess(true)
       dispatch(login(googleEmail, googleId))
       history.push('/')

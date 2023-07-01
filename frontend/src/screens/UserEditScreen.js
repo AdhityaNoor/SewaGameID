@@ -80,7 +80,7 @@ const UserEditScreen = ({ match, history }) => {
     <>
       <Helmet>
         <title>
-          {user ? `זץ | עריכת משתמש ${user.name}` : 'זץ | עריכת משתמש'}
+          {user ? `Admin | Edit User ${user.name}` : 'Admin | Edit User'}
         </title>
       </Helmet>
       <Button onClick={() => history.goBack()}>Kembali</Button>
@@ -98,7 +98,7 @@ const UserEditScreen = ({ match, history }) => {
           <Row>
             <Col md={3}>
               {' '}
-              <h1 style={{ color: '#AAAAAA' }}>עריכת משתמש</h1>
+              <h1 style={{ color: '#AAAAAA' }}>Edit User</h1>
               {loadingUpdate ? (
                 <Spinner />
               ) : loading ? (
@@ -145,7 +145,7 @@ const UserEditScreen = ({ match, history }) => {
                     <Form.Group controlId='isAdmin'>
                       <Form.Check
                         type='checkbox'
-                        label='מנהל מערכת'
+                        label='Administrator'
                         checked={isAdmin}
                         onChange={(e) => setIsAdmin(e.target.checked)}
                       ></Form.Check>
@@ -300,7 +300,7 @@ const UserEditScreen = ({ match, history }) => {
         </>
       ) : (
         <FormContainer>
-          <h1 style={{ color: '#AAAAAA' }}>עריכת משתמש</h1>
+          <h1 style={{ color: '#AAAAAA' }}>Edit User</h1>
           {loadingUpdate ? (
             <Spinner />
           ) : loading ? (
@@ -347,7 +347,7 @@ const UserEditScreen = ({ match, history }) => {
                 <Form.Group controlId='isAdmin'>
                   <Form.Check
                     type='checkbox'
-                    label='מנהל מערכת'
+                    label='Administrator'
                     checked={isAdmin}
                     onChange={(e) => setIsAdmin(e.target.checked)}
                   ></Form.Check>

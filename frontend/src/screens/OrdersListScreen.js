@@ -53,9 +53,9 @@ const OrdersListScreen = ({ history }) => {
   return (
     <>
       <Helmet>
-        <title>זץ | רשימת הזמנות</title>
+        <title>Pesanan</title>
       </Helmet>
-      <h1 style={{ color: '#AAAAAA' }}>רשימת הזמנות</h1>
+      <h1 style={{ color: '#AAAAAA' }}>Pesanan</h1>
 
       {loading ? (
         <Spinner />
@@ -113,7 +113,7 @@ const OrdersListScreen = ({ history }) => {
                     style={{ textAlign: 'right', width: '18rem' }}
                     className='hide-sm'
                   >
-                    Alamat לקוח
+                    Alamat Pelanggan
                   </th>
                   <th className='hide-sm hide-md'>Produk yang dipilih :</th>
                   <th>Status Pembayaran</th>
