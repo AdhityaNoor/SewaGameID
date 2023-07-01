@@ -1,11 +1,11 @@
 {
-  "name": "zetz-shop",
+  "name": "sewa-game-id",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "type": "module",
   "engines": {
-    "node": "18.15.0"
+    "node": "14.15.3"
   },
   "scripts": {
     "start": "node backend/server",
