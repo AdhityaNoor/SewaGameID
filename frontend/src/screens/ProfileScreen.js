@@ -234,7 +234,7 @@ const ProfileScreen = ({ history }) => {
               {deleteOrderError}
             </Message>
           ) : orders.length === 0 ? (
-            <h3>טרם בוצעו הזמנות</h3>
+            <h3>Belum ada riwayat pemesanan</h3>
           ) : (
             <>
               <Table striped bordered hover responsive className='table-sm'>
