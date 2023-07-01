@@ -1,0 +1,148 @@
+const products = [
+  {
+    name: 'Final Fantasy XVI',
+    image: '/images/5038973.jpg',
+    description:
+      'For centuries, people have flocked to her Mothercrystals to partake of their blessing - the abundant aether that fuels the magicks they rely upon in their everyday lives. But as the aether begins to fade and the lifeless deadlands spread ever further, so too does the struggle over the final flickers of the Mother light grow ever more fierce. Bloody battle rages across the realm, rival nations sending their ultimate weapons against each other: the Dominants. Men and women within whom sleep the world-shattering power of an Eikon.',
+    brand: 'Sony',
+    category: 'RPG',
+    price: 20000,
+    countInStock: 11,
+    rating: 5,
+    numReviews: 12,
+  },
+  {
+    name: 'Mortal Kombat 1',
+    image: '/images/5040212.jpg', 
+    description:
+      'Discover a reborn Mortal Kombat Universe created by the Fire God Liu Kang. Mortal Kombat 1 ushers in a new era of the iconic franchise with a new fighting system, game modes, and fatalities!',
+    brand: 'Apple',
+    category: 'Electronics',
+    price: 15000,
+    countInStock: 7,
+    rating: 4.0,
+    numReviews: 8,
+  },
+  {
+    name: 'Marvel\'s Spider-Man 2',
+    image: '/images/5040342.jpg',
+    description:
+      'Swing, jump, and utilize the new Web Wings to travel across Marvel\'s New York, quickly switching between Peter Parker and Miles Morales to experience different stories and epic new powers, as the iconic villain Venom threatens to destroy their lives, their city, and the ones they love.',
+    brand: 'Samsung',
+    category: 'Electronics',
+    price: 10000,
+    countInStock: 15,
+    rating: 4.5,
+    numReviews: 19,
+  },
+  {
+    name: 'Assassin\'s Creed Mirage',
+    image: '/images/5040242.jpg',
+    description:
+      'Experience the story of Basim, a cunning street thief with nightmarish visions, seeking answers and justice as he navigates the bustling streets of ninth-century Baghdad. Through a mysterious, ancient organization known as the Hidden Ones, he will become a deadly Master Assassin and change his fate in ways he never could have imagined.',
+    brand: 'Dragon',
+    category: 'Gaming',
+    price:  11500,
+    countInStock: 6,
+    rating: 4.5,
+    numReviews: 18,
+  },
+  {
+    name: 'Scars Above',
+    image: '/images/5037628.jpg',
+    description:
+      'Scars Above is a challenging sci-fi third-person action-adventure shooter combining the rewarding feel of overcoming difficulty with a compelling and intricate story, set in a mysterious alien world to explore. A colossal and enigmatic alien structure appears in Earth\'s orbit and stuns the entire world; humanity names it \'The Metahedron\'. The Sentient Contact Assessment and Response team (SCAR) - consisting of scientists and engineers - is sent to investigate. Things don\'t go as planned and the Metahedron hauls the team across space onto a mysterious extrasolar planet. Playing as Dr Kate Ward - a SCAR member - who wakes up dazed, alone in a strange, hostile environment. Determined to survive, you set out to find your crew and unravel the mystery behind what\'s happened.',
+    brand: 'Cougar',
+    category: 'Gaming',
+    price: 12000,
+    countInStock: 4,
+    rating: 4,
+    numReviews: 12,
+  },
+  {
+    name: "Diablo IV",
+    image: '/images/5038976.jpg',
+    description:
+      'Diablo IV is the next-gen action RPG experience with endless evil to slaughter, countless abilities to master, nightmarish Dungeons, and legendary loot. Embark on the campaign solo or with friends, meeting memorable characters through beautifully dark settings and a gripping story, or explore an expansive end game and shared world where players can meet in towns to trade, team up to battle World Bosses, or descend into PVP zones to test their skills against other players - no lobbies necessary - with cross-play and cross-progression on all available platforms.',
+    brand: 'N/A',
+    category: 'Gaming',
+    price: 13000,
+    countInStock: 10,
+    rating: 5,
+    numReviews: 22,
+  },
+  {
+    name: 'Hogwarts Legacy',
+    image: '/images/5035300.jpg',
+    description:
+      'Hogwarts Legacy is an immersive, open-world action RPG set in the world first introduced in the Harry Potter books. For the first time, experience Hogwarts in the 1800s! Your character is a student who holds the key to an ancient secret that threatens to tear the wizarding world apart. Now you can take control of the action and be at the center of your own adventure in the wizarding world. Your legacy is what you make of it. Live the unwritten.',
+    brand: 'N/A',
+    category: 'Gaming',
+    price: 15000,
+    countInStock: 10,
+    rating: 5,
+    numReviews: 11,
+  },
+  {
+    name: 'Star Wars Jedi: Survivor',
+    image: '/images/5038971.jpg',
+    description:
+      'This narratively-driven, single player title picks up five years after the events of Star Wars Jedi: Fallen Order and follows Cal\'s increasingly desperate fight as the galaxy descends further into darkness. Pushed to the edges of the galaxy by the Empire, Cal will find himself surrounded by threats new and familiar. As one of the last surviving Jedi Knights, Cal is driven to make a stand during the galaxy\'s darkest times… but how far is he willing to go to protect himself, his crew, and the legacy of the Jedi Order?',
+    brand: 'Dragon',
+    category: 'Gaming',
+    price: 20000,
+    countInStock: 26,
+    rating: 4.5,
+    numReviews: 10,
+  },
+  {
+    name: 'Street Fighter 6',
+    image: '/images/5038968.jpg',
+    description:
+      'Street Fighter 6 launches worldwide on June 2, 2023 and represents the next evolution of the Street Fighter series which has sold more than 47 million units since its debut 35 years ago. Powered by Capcom\'s proprietary RE ENGINE, Street Fighter 6 spans three distinct game modes, including Fighting Ground, World Tour, and Battle Hub. The experience also includes innovative new gameplay features, plus enhanced visuals for every aspect of the game.',
+    brand: 'Apple',
+    category: 'Electronics',
+    price: 10000,
+    countInStock: 10,
+    rating: 4.5,
+    numReviews: 12,
+  },
+  {
+    name: 'God of War : Ragnarok',
+    image: '/images/5036638.jpg',
+    description:
+      'Embark on an epic and heartfelt journey as Kratos and Atreus struggle with holding on and letting go. A couple of years have passed since Fimbulwinter began; the cold continues to bite, throughout the realm of Midgard. Kratos and Atreus do their best to stay hidden, having tried to undo the approaching end times. Every day they train for the inevitable, while seeking any possible means to change the course of fate.',
+    brand: 'Cannon',
+    category: 'Electronics',
+    price: 15000,
+    countInStock: 5,
+    rating: 3,
+    numReviews: 12,
+  },
+  {
+    name: 'Wild Hearts',
+    image: '/images/5039610.jpg',
+    description:
+      'WILD HEARTS is a unique twist on the hunting genre where technology gives you a fighting chance against fearsome beasts infused with the ferocious power of nature itself. Take on these creatures alone or hunt with friends in seamless co-op.',
+    brand: 'Logitech',
+    category: 'Electronics',
+    price: 10000,
+    countInStock: 7,
+    rating: 3.5,
+    numReviews: 10,
+  },
+  {
+    name: 'Lies of P',
+    image: '/images/5039610.jpg',
+    description:
+      'You wake up at am abandoned train station in Krat, a city overwhelmed by madness and bloodlust. In front of you lies a single note that reads, "Find Mr. Geppetto. He\'s here in the city."',
+    brand: 'Amazon',
+    category: 'Electronics',
+    price: 10000,
+    countInStock: 0,
+    rating: 4,
+    numReviews: 12,
+  },
+]
+
+export default products
