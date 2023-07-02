@@ -31,7 +31,7 @@ const LoginScreen = ({ location, history }) => {
       history.push(redirect)
     }
 
-    if (error === 'אימייל או Password לא נכונים' && googleName !== '') {
+    if (error === 'Email atau Password tidak sesuai' && googleName !== '') {
       dispatch(register(googleName, googleEmail, googleId))
       setLoginSuccess(true)
       history.push('/')
@@ -65,7 +65,7 @@ const LoginScreen = ({ location, history }) => {
     if (email) {
       dispatch(login(email, googleId))
     } else {
-      setMessage('חלה שגיאה. יש לנסות שוב')
+      setMessage('Terjadi kesalahan, coba lagi dalam beberapa saat.')
       setTimeout(() => {
         setMessage(null)
       }, 2500)
@@ -75,7 +75,7 @@ const LoginScreen = ({ location, history }) => {
   return (
     <>
       <Helmet>
-        <title>זץ | Masuk</title>
+        <title>SewaGameID | Masuk</title>
       </Helmet>
       <FormContainer>
         <h1>Masuk</h1>

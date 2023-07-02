@@ -54,7 +54,7 @@ const RegisterScreen = ({ location, history }) => {
     e.preventDefault()
 
     if (password !== confirmPassword) {
-      setMessage('הסיסמאות אינן תואמות')
+      setMessage('Kata sandi tidak cocok')
       setTimeout(() => {
         setMessage(null)
       }, 2500)
@@ -66,7 +66,7 @@ const RegisterScreen = ({ location, history }) => {
   return (
     <>
       <Helmet>
-        <title>זץ | Daftar</title>
+        <title>SewaGameID | Daftar</title>
       </Helmet>
       <FormContainer>
         {message && (
