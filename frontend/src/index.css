@@ -364,7 +364,7 @@ input {
 
 @media (max-width: 1190px) {
   .card-main-md {
-    height: 480px !important;
+    height: fit-content !important;
   }
 
   .form-control-lg {
@@ -374,8 +374,9 @@ input {
 
 @media (max-width: 1150px) {
   .list-group-home-md {
-    height: 480px !important;
+    height: fit-content !important;
   }
+  
 }
 
 @media (max-width: 1000px) {
@@ -385,6 +386,11 @@ input {
     background-image: linear-gradient(#ffb340, #ffb440 60%, #ffd86a);
     color: #214638;
   }
+
+  .card-main-md {
+    height: fit-content !important;
+  }
+
 }
 
 @media (max-width: 985px) {
@@ -432,6 +438,10 @@ input {
   .icon-md {
     margin-right: 1.25rem;
   }
+
+  .card-main-md {
+    height: fit-content !important;
+  }
 }
 
 @media (max-width: 770px) {
@@ -463,6 +473,10 @@ input {
     color: #214638;
   }
 
+  .card-main-md {
+    height: fit-content !important;
+  }
+
   .card-main-sm {
     height: 610px !important;
   }
@@ -490,11 +504,20 @@ input {
   .mt-4-sm {
     margin-top: 1.5rem !important;
   }
+
+  .card-main-md {
+    height: fit-content !important;
+  }
 }
 
 @media (max-width: 580px) {
   .input-group-xs {
     width: 60% !important;
     margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+
+  .card-main-md {
+    height: fit-content !important;
   }
 }
