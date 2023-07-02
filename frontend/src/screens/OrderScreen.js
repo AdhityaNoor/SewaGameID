@@ -178,7 +178,7 @@ const OrderScreen = ({ history, match }) => {
                       </p>
                       {order.isDelivered ? (
                         <Message variant='brand' dismissible={false}>
-                          נשלח בתאריך {deliveredAtDate.toLocaleString('id-ID')}
+                          Sedang Dikirim{deliveredAtDate.toLocaleString('id-ID')}
                         </Message>
                       ) : (userInfo && !userInfo.isAdmin) ||
                         (userInfo.isAdmin && !order.isPaid) ? (
@@ -195,7 +195,7 @@ const OrderScreen = ({ history, match }) => {
                               className='btn btn-success my-3'
                               onClick={deliverOrderHandler}
                             >
-                              סימון ההזמנה כנשלחה
+                             Tandai sudah terkirim
                             </Button>
                           </div>
                         )
@@ -270,7 +270,7 @@ const OrderScreen = ({ history, match }) => {
                   <h2>Produk yang dipilih :</h2>
                   {order.orderItems.length === 0 ? (
                     <Message variant='brand' dismissible={false}>
-                      ההזמנה ריקה
+                      Pesanan Kosong
                     </Message>
                   ) : (
                     <ListGroup variant='flush'>

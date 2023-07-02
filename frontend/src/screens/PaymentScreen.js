@@ -36,14 +36,14 @@ const PaymentScreen = ({ history }) => {
     <>
       <CheckoutSteps step1 step2 step3 step4={shippingAddress.address} />
       <FormContainer>
-        <h1>Cara Pembayaran</h1>
+        <h1>Pilih Cara Bayar</h1>
         <Form onSubmit={submitHandler}>
           <Form.Group>
-            <Form.Label as='h2'>בחירת Cara Pembayaran</Form.Label>
+            <Form.Label as='h2'></Form.Label>
             <Col>
               <Form.Check
                 type='radio'
-                label='פייפאל atau Kartu Kredit/Debit'
+                label='Paypal atau Kartu Kredit/Debit'
                 id='PayPal'
                 name='paymentMethod'
                 value='PayPal'

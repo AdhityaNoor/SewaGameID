@@ -45,7 +45,7 @@ const CartScreen = ({ match, location, history }) => {
   return (
     <>
       <Helmet>
-        <title>Keranjang</title>
+        <title>SewaGameID | Keranjang</title>
       </Helmet>
       {cartItems.length === 0 && (
         <Button onClick={() => history.push('/')}>Kembali</Button>

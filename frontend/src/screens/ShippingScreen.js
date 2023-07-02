@@ -58,7 +58,7 @@ const ShippingScreen = ({ history }) => {
   return (
     <>
       <Helmet>
-        <title>זץ | Alamat Pengiriman</title>
+        <title>SewaGameID | Alamat Pengiriman</title>
       </Helmet>
       <CheckoutSteps
         step1

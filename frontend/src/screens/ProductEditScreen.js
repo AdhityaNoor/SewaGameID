@@ -192,7 +192,7 @@ const ProductEditScreen = ({ match, history }) => {
                     <Form.Label>Harga</Form.Label>
                     <Form.Control
                       type='number'
-                      placeholder='מחיר'
+                      placeholder='Harga'
                       value={price}
                       onChange={(e) => setPrice(e.target.value)}
                     ></Form.Control>

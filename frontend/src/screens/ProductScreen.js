@@ -58,7 +58,7 @@ const ProductScreen = ({ history, match }) => {
     <>
       <Helmet>
         <title>
-          {!product ? `זץ - כי לקנות פה יתן לך זץ` : `זץ | ${product.name}`}
+          {!product ?`SewaGameID - Sewa aja, Murah !`: `SewaGameID | ${product.name}`}
         </title>
       </Helmet>
       <Button onClick={() => history.goBack()} className='mb-3'>
@@ -213,7 +213,7 @@ const ProductScreen = ({ history, match }) => {
                     <Row>
                       <Col>Status:</Col>
                       <Col>
-                        {product.countInStock > 0 ? `Tersedia` : `חסר במלאי`}
+                        {product.countInStock > 0 ? `Tersedia` : `Stok Habis`}
                       </Col>
                     </Row>
                   </ListGroup.Item>

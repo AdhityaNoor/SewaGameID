@@ -93,7 +93,7 @@ const HomeScreen = ({ match, history }) => {
             ) : (
               <>
                 <h3 className='mr-3'>
-                  לא נמצאו מוצרים.{' '}
+                  Produk tidak ditemukan. {' '}
                   <span
                     style={{ color: '#AAAAAA' }}
                     className='link'

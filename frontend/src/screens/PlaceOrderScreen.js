@@ -78,7 +78,7 @@ const PlaceOrderScreen = ({ history }) => {
   return (
     <>
       <Helmet>
-        <title>זץ | ביצוע הזמנה</title>
+        <title>SewaGameID | Pemesanan</title>
       </Helmet>
       <CheckoutSteps step1 step2 step4 />
       <Row>
@@ -160,7 +160,7 @@ const PlaceOrderScreen = ({ history }) => {
                                 addToCart(
                                   item.product,
                                   Number(e.target.value),
-                                  'עגלת הקניות עודכנה בהצלחה'
+                                  'Keranjang belanja telah berhasil diperbarui'
                                 )
                               )
                               setTimeout(() => {
@@ -252,7 +252,7 @@ const PlaceOrderScreen = ({ history }) => {
                     type='button'
                     className='btn-brand btn-block'
                     disabled
-                    style={{
+                    style={{ 
                       color: '#5b6671',
                       cursor: 'not-allowed',
                     }}

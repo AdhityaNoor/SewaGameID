@@ -45,7 +45,7 @@ const OrdersListScreen = ({ history }) => {
   }, [dispatch, userInfo, history, loadingDeliver, successDeliver])
 
   const deleteHandler = (id) => {
-    if (window.confirm('האם אתם בטוחים שברצונכם למחוק את ההזמנה?')) {
+    if (window.confirm('Anda yakin ingin menghapus pesanan ?')) {
       dispatch(deleteOrder(id, userInfo._id))
     }
   }
