@@ -87,7 +87,7 @@ npm run build
 
 - Use React for the front end.
 
-- Use GraphQL with a Node.js and Express.js server.
+- Use RestAPI with a Node.js and Express.js server.
 
 - Use MongoDB on Mongo Atlas and the Mongoose ODM for the database.
 
@@ -116,7 +116,7 @@ npm run build
 - React.js
 - Node.js
 - MaterialUI
-- GraphQL
+- RestAPI
 - JavaScript
 - Mongoose
 - Apollo Server Express
