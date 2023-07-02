@@ -17,7 +17,7 @@ const addOrderItems = asyncHandler(async (req, res) => {
 
   if (orderItems && orderItems.length === 0) {
     res.status(400)
-    throw new Error('אין Produk yang dipilih :')
+    throw new Error('Tidak ada produk yang dipilih :')
   } else {
     const order = new Order({
       user: req.user._id,
@@ -54,7 +54,7 @@ const getOrderById = asyncHandler(async (req, res) => {
     res.json(order)
   } else {
     res.status(404)
-    throw new Error('ההזמנה לא נמצאה')
+    throw new Error('Pesanan tidak ditemukan')
   }
 })
 
@@ -85,7 +85,7 @@ const updateOrderToPaid = asyncHandler(async (req, res) => {
     res.json(updatedOrder)
   } else {
     res.status(404)
-    throw new Error('ההזמנה לא נמצאה')
+    throw new Error('Pesanan tidak ditemukan')
   }
 })
 
@@ -104,7 +104,7 @@ const updateOrderToDelivered = asyncHandler(async (req, res) => {
     res.json(updatedOrder)
   } else {
     res.status(404)
-    throw new Error('ההזמנה לא נמצאה')
+    throw new Error('Pesanan tidak ditemukan')
   }
 })
 
@@ -120,7 +120,7 @@ const deleteOrder = asyncHandler(async (req, res) => {
 
       await order.remove()
 
-      res.send('ההזמנה בוטלה בהצלחה')
+      res.send('Pesanan berhasil dibatalkan')
 
       const orders = await Order.find({ user: user._id })
 
@@ -131,11 +131,11 @@ const deleteOrder = asyncHandler(async (req, res) => {
       }
     } else {
       res.status(404)
-      throw new Error('אין הרשאה')
+      throw new Error('Not Authorized')
     }
   } else {
     res.status(404)
-    throw new Error('ההזמנה לא נמצאה')
+    throw new Error('Pesanan tidak ditemukan')
   }
 })
 

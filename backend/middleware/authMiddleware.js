@@ -19,13 +19,13 @@ const protect = asyncHandler(async (req, res, next) => {
     } catch (err) {
       console.error(err)
       res.status(401)
-      throw new Error('אין הרשאה')
+      throw new Error('401 - Not Authorized')
     }
   }
 
   if (!token) {
     res.status(401)
-    throw new Error('אין הרשאה')
+    throw new Error('401 - Not Authorized')
   }
 })
 
@@ -34,7 +34,7 @@ const isAdmin = (req, res, next) => {
     next()
   } else {
     res.status(401)
-    throw new Error('אין הרשאה. נדרשת הרשאת מנהל מערכת')
+    throw new Error('401 - Not Authorized. Hanya akses admin')
   }
 }
 

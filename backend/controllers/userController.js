@@ -22,7 +22,7 @@ const authUser = asyncHandler(async (req, res) => {
     })
   } else {
     res.status(401)
-    throw new Error('אימייל או Password לא נכונים')
+    throw new Error('Email atau Kata Sandi tidak valid')
   }
 })
 
@@ -36,7 +36,7 @@ const registerUser = asyncHandler(async (req, res) => {
 
   if (userExists) {
     res.status(400)
-    throw new Error('המשתמש קיים')
+    throw new Error('User sudah ada')
   }
 
   const user = await User.create({
@@ -61,7 +61,7 @@ const registerUser = asyncHandler(async (req, res) => {
     })
   } else {
     res.status(400)
-    throw new Error('הפרטים שהוזנו אינם נכונים')
+    throw new Error('Detail yang dimasukan tidak sesuai')
   }
 })
 
@@ -81,7 +81,7 @@ const getUserProfile = asyncHandler(async (req, res) => {
     })
   } else {
     res.status(404)
-    throw new Error('המשתמש לא נמצא')
+    throw new Error('User tidak ditemukan')
   }
 })
 
@@ -123,7 +123,7 @@ const updateUserProfile = asyncHandler(async (req, res) => {
     })
   } else {
     res.status(404)
-    throw new Error('המשתמש לא נמצא')
+    throw new Error('User tidak ditemukan')
   }
 })
 
@@ -144,14 +144,14 @@ const deleteUser = asyncHandler(async (req, res) => {
   if (user) {
     if (user.hasPaidOrders) {
       res.status(403)
-      throw new Error('לא ניתן למחוק משתמש עם הזמנות משולמות')
+      throw new Error('User dengan pesanan terbayar tidak dapat dihapus.')
     }
     await Order.deleteMany({ user: req.params.id })
     await user.remove()
-    res.json({ message: 'המשתמש הוסר' })
+    res.json({ message: 'User telah dihapus' })
   } else {
     res.status(404)
-    throw new Error('המשתמש לא נמצא')
+    throw new Error('User tidak ditemukan')
   }
 })
 
@@ -165,7 +165,7 @@ const getUserById = asyncHandler(async (req, res) => {
     res.json(user)
   } else {
     res.status(404)
-    throw new Error('המשתמש לא נמצא')
+    throw new Error('User tidak ditemukan')
   }
 })
 
@@ -190,7 +190,7 @@ const updateUser = asyncHandler(async (req, res) => {
     })
   } else {
     res.status(404)
-    throw new Error('המשתמש לא נמצא')
+    throw new Error('User tidak ditemukan')
   }
 })
 

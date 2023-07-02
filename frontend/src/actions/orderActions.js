@@ -329,7 +329,7 @@ export const deleteOrder = (id, user) => async (dispatch, getState) => {
     } else {
       dispatch({
         type: ORDER_DELETE_FAIL,
-        payload: 'אין הרשאה',
+        payload: 'Not Authorized',
       })
     }
   } catch (err) {
