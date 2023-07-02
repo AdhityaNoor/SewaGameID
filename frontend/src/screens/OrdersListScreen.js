@@ -142,7 +142,7 @@ const OrdersListScreen = ({ history }) => {
                         onClick={() => history.push(`/order/${order._id}`)}
                         className='order-link'
                       >
-                        <span title='מעבר לפרטי ההזמנה'>
+                        <span title='Diluar detail pesanan'>
                           {new Date(
                             order.createdAt.substring(0, 10)
                           ).toLocaleDateString('id-ID')}
@@ -152,13 +152,13 @@ const OrdersListScreen = ({ history }) => {
                         onClick={() => history.push(`/order/${order._id}`)}
                         className='order-link'
                       >
-                        <span title='מעבר לפרטי ההזמנה'>{order.user.name}</span>
+                        <span title='Diluar detail pesanan'>{order.user.name}</span>
                       </td>
                       <td
                         onClick={() => history.push(`/order/${order._id}`)}
                         className='order-link text-right hide-sm'
                       >
-                        <span title='מעבר לפרטי ההזמנה'>
+                        <span title='Diluar detail pesanan'>
                           {order.shippingAddress.address}{' '}
                           {order.shippingAddress.city}
                         </span>
@@ -167,7 +167,7 @@ const OrdersListScreen = ({ history }) => {
                         onClick={() => history.push(`/order/${order._id}`)}
                         className='order-link hide-sm hide-md'
                       >
-                        <span title='מעבר לפרטי ההזמנה'>
+                        <span title='Diluar detail pesanan'>
                           {order.orderItems.length}
                         </span>
                       </td>
@@ -177,7 +177,7 @@ const OrdersListScreen = ({ history }) => {
                         }
                         className='order-link'
                       >
-                        <span title='מעבר לפרטי ההזמנה'>
+                        <span title='Diluar detail pesanan'>
                           {order.isPaid ? (
                             <i
                               className='fas fa-check'
@@ -198,7 +198,7 @@ const OrdersListScreen = ({ history }) => {
                         onClick={() => history.push(`/order/${order._id}`)}
                         className='hide-sm'
                       >
-                        <span title='מעבר לפרטי ההזמנה'>
+                        <span title='Diluar detail pesanan'>
                           {order.isPaid
                             ? new Date(
                                 order.paidAt.substring(0, 10)
@@ -213,7 +213,7 @@ const OrdersListScreen = ({ history }) => {
                         }
                         className='order-link'
                       >
-                        <span title='מעבר לפרטי ההזמנה'>
+                        <span title='Diluar detail pesanan'>
                           {order.isDelivered ? (
                             <i
                               className='fas fa-check'
@@ -233,7 +233,7 @@ const OrdersListScreen = ({ history }) => {
                         onClick={() => history.push(`/order/${order._id}`)}
                         className='hide-sm'
                       >
-                        <span title='מעבר לפרטי ההזמנה'>
+                        <span title='Diluar detail pesanan'>
                           {order.isDelivered
                             ? new Date(
                                 order.deliveredAt.substring(0, 10)
@@ -246,7 +246,7 @@ const OrdersListScreen = ({ history }) => {
                         onClick={() => history.push(`/order/${order._id}`)}
                         className='order-link'
                       >
-                        <span title='מעבר לפרטי ההזמנה'>
+                        <span title='Diluar detail pesanan'>
                           <NumberFormat
                             value={order.totalPrice}
                             displayType={'text'}
