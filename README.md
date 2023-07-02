@@ -74,9 +74,6 @@ cd frontend
 npm run build
 ```
 
-There is a Heroku postbuild script, so if you push to Heroku, no need to build manually for deployment to Heroku
-
-
 ## Table of Contents
 
 - [Description](#description)
@@ -101,7 +98,7 @@ Still Good is a product tracking tool, designed to remedy your wasteful habits o
 
 - Use queries and mutations for retrieving, adding, updating, and deleting data.
 
-- Be deployed using Heroku (with data).
+- Be deployed using AWS EC2 (with data).
 
 - Have a polished UI.
 
