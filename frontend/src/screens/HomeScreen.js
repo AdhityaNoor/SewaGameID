@@ -8,6 +8,7 @@ import Spinner from '../components/layout/Spinner'
 import Message from '../components/Message'
 import Paginate from '../components/Paginate'
 import ProductCarousel from '../components/ProductCarousel'
+import ProductTop from '../components/ProductTop'
 
 const HomeScreen = ({ match, history }) => {
   const keyword = match.params.keyword
@@ -51,8 +52,11 @@ const HomeScreen = ({ match, history }) => {
             </ListGroup.Item>
           </ListGroup>
           <h3 className='mb-n3 mt-4' style={{ color: '#ffb440' }}>
+            Produk Top
+          </h3>
+          <ProductTop />
+          <h3 className='mb-n3 mt-4' style={{ color: '#ffb440' }}>
             Semua Produk
-            
           </h3>
         </>
       )}
