@@ -1,6 +1,5 @@
+# 🚀 SewaGame.ID 🚀
 Video games rent platform built with the MERN stack & Redux. Custom Bootstrap with Bootswatch. Backend: Node.js, Mongo DB, mongoose, Express, bcrypt, json web token, multer, nodemon, concurrently. Frontend: React, React-bootstrap, React-redux, React-router-dom, Redux-thunk, google-login.
-
-# 🚀 SEWAGAME.ID 🚀
 
 ## MERN Stack
 
@@ -90,7 +89,7 @@ npm run build
 
 - Use GraphQL with a Node.js and Express.js server.
 
-- Use MongoDB and the Mongoose ODM for the database.
+- Use MongoDB on Mongo Atlas and the Mongoose ODM for the database.
 
 - Use queries and mutations for retrieving, adding, updating, and deleting data.
 
