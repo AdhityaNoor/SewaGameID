@@ -84,10 +84,6 @@ npm run build
 - [Future Features](#future-features)
 - [Collaboration Requests](#collaboration-requests)
 
-## Description
-
-Still Good is a product tracking tool, designed to remedy your wasteful habits or curate your existing flow of perishable items. The idea is to support budget-conscious or waste-conscious people in their missions to move products from store to consumed by the expiration dates.
-
 **Project Requirements:**
 
 - Use React for the front end.
