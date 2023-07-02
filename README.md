@@ -1,6 +1,6 @@
 Video games rent platform built with the MERN stack & Redux. Custom Bootstrap with Bootswatch. Backend: Node.js, Mongo DB, mongoose, Express, bcrypt, json web token, multer, nodemon, concurrently. Frontend: React, React-bootstrap, React-redux, React-router-dom, Redux-thunk, google-login.
 
-# 🚀 Javascript full-stack 🚀
+# 🚀 SEWAGAME.ID 🚀
 
 ## MERN Stack
 
