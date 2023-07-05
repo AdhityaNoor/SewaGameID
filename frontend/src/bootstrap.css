@@ -724,8 +724,8 @@ pre code {
 .col-xl-auto {
   position: relative;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 .col {
@@ -1631,9 +1631,12 @@ pre code {
     max-width: 16.666667%;
   }
   .col-xl-3 {
-    -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
-    max-width: 25%;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+    .strong{
+      text-overflow: ellipsis;
+    }
   }
   .col-xl-4 {
     -ms-flex: 0 0 33.333333%;
@@ -5150,11 +5153,11 @@ input[type='button'].btn-block {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   min-height: 1px;
-  padding: 1.25rem;
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
 }
 
 .card-title {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
 .card-subtitle {
@@ -5934,7 +5937,7 @@ a.badge-dark.focus {
   display: block;
   padding: 0.75rem 1.25rem;
   background-color: #32383e;
-  border: 1px solid rgba(0, 0, 0, 0.6);
+  /* border: 1px solid rgba(0, 0, 0, 0.6); */
 }
 
 .list-group-item:first-child {
@@ -8679,7 +8682,7 @@ button.bg-dark:focus {
 
 .mt-3,
 .my-3 {
-  margin-top: 1rem !important;
+  margin-top: 0.5rem !important;
 }
 
 .mr-3,
@@ -8689,7 +8692,7 @@ button.bg-dark:focus {
 
 .mb-3,
 .my-3 {
-  margin-bottom: 1rem !important;
+  margin-bottom: 0.5rem !important;
 }
 
 .ml-3,
@@ -8827,7 +8830,7 @@ button.bg-dark:focus {
 }
 
 .p-3 {
-  padding: 1rem !important;
+  padding: 0rem !important;
 }
 
 .pt-3,

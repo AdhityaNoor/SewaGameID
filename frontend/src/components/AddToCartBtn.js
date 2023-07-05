@@ -22,7 +22,7 @@ const AddToCartBtn = ({ disabled, id, qty }) => {
       disabled={disabled}
       onClick={addToCartHandler}
     >
-      Masukkan Keranjang
+      + Keranjang
     </Button>
   )
 }

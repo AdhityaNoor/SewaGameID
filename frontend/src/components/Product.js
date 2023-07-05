@@ -13,12 +13,20 @@ const Product = ({ product }) => {
       <Card.Body>
         <Link to={`/product/${product._id}`}>
           <Card.Title as='div' className='mt-1-sm'>
-            <strong>
-              {product.name.length > 37
+            <strong className='strong'>
+              {/* {product.name.length > 37
                 ? `${product.name.slice(0, 37)}...`
-                : `${product.name}`}
+                : `${product.name}`} */}
+                {product.name}
             </strong>
           </Card.Title>
+          {/* <Card.Title as='div' className='mt-1-sm'>
+            <strong className='strong'>
+              {product.name.length > 37
+                ? `${product.category.slice(0, 37)}...`
+                : `${product.category}`}
+            </strong>
+          </Card.Title> */}
         </Link>
         <Card.Text as='div'>
           <Rating

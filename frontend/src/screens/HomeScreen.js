@@ -44,7 +44,7 @@ const HomeScreen = ({ match, history }) => {
       {!keyword && (
         <>
           <ListGroup>
-            <ListGroup.Item className='pb-5 list-group-home list-group-home-md list-group-home-sm hide-sm'>
+            <ListGroup.Item className='list-group-home list-group-home-md list-group-home-sm hide-sm'>
               <h1 className='mr-5' style={{ color: '#ffb440' }}>
                 Lagi Populer Nih!
               </h1>
